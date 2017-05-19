@@ -1,10 +1,12 @@
 package test.pojo;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable{
 
 	private int id;
 	private String name;
-	private String passwdString;
+	private String passwd;
 	private int age;
 	public int getId() {
 		return id;
@@ -18,11 +20,11 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getPasswdString() {
-		return passwdString;
+	public String getPasswd() {
+		return passwd;
 	}
-	public void setPasswdString(String passwdString) {
-		this.passwdString = passwdString;
+	public void setPasswd(String passwd) {
+		this.passwd = passwd;
 	}
 	public int getAge() {
 		return age;
@@ -32,7 +34,7 @@ public class User {
 	}
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", passwdString="
-				+ passwdString + ", age=" + age + "]";
+		return "User [id=" + id + ", name=" + name + ", passwd="
+				+ passwd + ", age=" + age + "]";
 	}
 }

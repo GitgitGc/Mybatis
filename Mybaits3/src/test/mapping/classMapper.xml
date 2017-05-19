@@ -4,7 +4,7 @@
 例如namespace="test.mapping.classMapper"就是test.mapping(包名)+classMapper(classMapper.xml文件去除后缀)
  -->
 <mapper namespace="test.mapping.classMapper">
-
+<cache/>
     <!-- 
         根据班级id查询班级信息(带老师的信息)
         ##1. 联表查询
